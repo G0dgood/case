@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import meeting from '../assets/img/romain-outcess.jpg';
+import graham from '../assets/img/graham-mansfield.jpg';
 import { caseStudyData } from "../Library/Libraries";
 import { Card, Button } from 'react-bootstrap';
 
@@ -71,17 +72,17 @@ const CaseStudies = () => {
      }
      <div className="card-container   pt-5 col-12">
       {data.map((data, index) => (
-       <div key={index}>
-        <h2>{data[1]}</h2>
-        <Card className="categories-card  " style={{ width: '22rem' }}>
-         <Card.Img variant="top" src={meeting} />
+       <div key={index}> 
+        <Card className="categories-card card " style={{ width: '22rem' }}  >
+         <Card.Img variant="top" src={graham}   />
          <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>Business Productivity Solutions</Card.Title>
+          <Card.Title className="Title-card-two" >Government Agency</Card.Title>
           <Card.Text>
            Business Challenge: In ability to track history of walk in customers and customer who reaches out to them via all their channel of interaction.
            Business Challenge: In ability to track history of walk in customers and customer who reaches out to them via all their channel of interaction.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary">Learn more</Button>
          </Card.Body>
         </Card>
 
