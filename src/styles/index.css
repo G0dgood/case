@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/*** --- Other CSS Files --- ***/
+@import url(./Navbar.css);
+@import url(./CaseStudies.css);
+@import url(../assets/fontawesome-free-5.15.4-web/css/all.css);
+@import url(./Footer.css);
+@import url(./css/bootstrap.css);

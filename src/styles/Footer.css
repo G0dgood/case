@@ -1,0 +1,117 @@
+#footer {
+  background-color: #F7F7F7;
+  width: 100%;
+  font-size: 1.15rem;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 2.5rem 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-grid-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #cacaca;
+}
+
+.footer-details p {
+  color: #F95738;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.footer-details li {
+  margin: .6rem 0;
+}
+
+.footer-details li a:hover {
+  color: #F95738;
+  transition: .25s;
+}
+
+.footer-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.footer-media ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*** --- Media Queries --- ***/
+/* Mobile Dimension */
+@media only screen and (max-width: 480px) {
+  .footer-container {
+    padding: 2.5rem 1.3rem;
+  }
+  .footer-grid-up {
+    grid-template-columns: 1fr;
+    padding-bottom: 1.5rem;
+    border-bottom: none;
+  }
+  .footer-details {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cacaca;
+  }
+  .footer-media {
+    flex-direction: column;
+    padding-top: .5rem;
+  }
+  .footer-media ul {
+    margin-top: 1rem;
+  }
+}
+
+
+/* Tablet Dimension */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .footer-container {
+    padding: 2.5rem 2rem;
+  }
+  .footer-grid-up {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+  .footer-details {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #cacaca;
+  }
+  .footer-details ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-details li {
+    margin: .3rem 0;
+  }
+}
+
+
+/* Extra Dimension */
+@media only screen and (max-width: 855px) {
+  .footer-container {
+    padding: 2.5rem 1.5rem;
+  }
+}
